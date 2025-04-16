@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(userAgent)) {
+        window.location.href = "https://play.google.com/store/apps/details?id=com.unicule";
+      } else if (/iPad|iPhone|iPod/.test(userAgent)) {
+        window.location.href = "https://apps.apple.com/in/app/cules/id1631990091";
+      } else {
+        window.location.href = "https://unicule.com";
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to the app store...</p>
+  </body>
+</html>
